@@ -3,7 +3,7 @@
 
 ## Instructions:
 
-- [x] $: git clone https://github.com/habtamua/django-mailroom.git**
+- [x] $: git clone https://github.com/habtamua/django-mailroom.git
 - [x] $: cd django-mailroom
 - [x] $: mkvirtualenv djangoenv
 - [x] $: pip install -r requirements.txt
