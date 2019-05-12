@@ -7,6 +7,7 @@
 - [x] $: cd django-mailroom
 - [x] $: mkvirtualenv djangoenv
 - [x] $: pip install -r requirements.txt
+- [x] $: python manage.py makemigrations
 - [x] $: ./manage.py migrate
 - [x] $: ./manage.py createsuperuser
 - [x] $: ./manage.py runserver
