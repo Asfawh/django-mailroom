@@ -1,0 +1,18 @@
+{# mailroomapp/templates/mrapp/dontations.html #}
+
+
+{% block subtitle %}All Donations{% endblock subtitle %}
+
+{% block content %}
+<div class="card-columns">
+  {% for donation in donations %}
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ donation.donor.name }}</h5>
+        <p class="card-text">{{ donation.value }}</p>
+        <a href="?donor={{ donation.donor.name }}" class="btn btn-primary">More donations from {{ donation.donor.name }}</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock content %}

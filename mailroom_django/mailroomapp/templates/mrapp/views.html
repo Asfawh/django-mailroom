@@ -1,0 +1,14 @@
+{# mailroomapp/templates/mrapp/views.html #}
+
+
+{% extends 'base.htmls' %}
+
+{% block subtitle %}Retrieve new donations{% endblock subtitle %}
+
+{% block content %}
+<ul>
+    {% for donation in donations %}
+        <li><b>{{ donation.donor.name }}</b>: {{ donation.value }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
